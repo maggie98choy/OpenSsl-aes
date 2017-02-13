@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
     AES_set_decrypt_key(aes_key,sizeof(aes_key)*8,&dec_key);
     AES_cbc_encrypt(enc_out,dec_out,sizeof(aes_input),&dec_key,iv,AES_DECRYPT);
     
-    //verify
+    //verify by printing
     printf("original: %s\n",aes_input);
     hex_print(enc_out, sizeof enc_out);
     printf("decrypted: %s\n",dec_out);
