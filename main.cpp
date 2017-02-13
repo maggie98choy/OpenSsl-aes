@@ -5,7 +5,7 @@
 
 using namespace std;
 
-
+// Some changes
 static void hex_print(const void* pv, size_t len)
 {
     const unsigned char * p = (const unsigned char*)pv;
