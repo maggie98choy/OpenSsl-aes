@@ -22,11 +22,14 @@ static void hex_print(const void* pv, size_t len)
 
 const static unsigned char aes_key[]={"passwordaaaaaaa"}; //15 characters + \0
 
-int main() {
+int main(int argc, char **argv) {
 
     std::string input;
-    cout<< "Enter a string:";
-    getline(cin, input);
+    if (argc == 2)
+        input = argv[1];
+    
+    //cout<< "Enter a string:";
+    //getline(cin, input);
     
     unsigned char aes_input[input.length()+1];
     copy( input.begin(), input.end(), aes_input );
