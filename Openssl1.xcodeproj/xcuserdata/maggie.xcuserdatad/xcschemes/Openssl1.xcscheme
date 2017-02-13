@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "&quot;Hello World&quot;"
+            argument = "&quot;Hello World. This is the Openssl-aes encryption and decryption program.&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

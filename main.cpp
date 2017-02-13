@@ -5,7 +5,6 @@
 
 using namespace std;
 
-// Some changes
 static void hex_print(const void* pv, size_t len)
 {
     const unsigned char * p = (const unsigned char*)pv;
@@ -52,8 +51,8 @@ int main(int argc, char **argv) {
     AES_cbc_encrypt(enc_out,dec_out,sizeof(aes_input),&dec_key,iv,AES_DECRYPT);
     
     //verify
-    printf("original %s\n",aes_input);
+    printf("original: %s\n",aes_input);
     hex_print(enc_out, sizeof enc_out);
-    printf("decrypted %s\n",dec_out);
+    printf("decrypted: %s\n",dec_out);
     return 0;
 }
